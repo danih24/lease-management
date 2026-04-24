@@ -1,14 +1,18 @@
 package com.danih24.lease_management.model
 
-import java.util.UUID
-
 data class Bicycle(
-    val frameNumber: UUID,
+    val id: Int,
+    val frameNumber: String,
     val brand: String,
     val model: String,
-    val category: BikeCategory
+    val category: BikeCategory,
+    val condition: BikeCondition,
 )
 
 enum class BikeCategory {
-    MTB, EBIKE, Gravel, CITY, CARGO, FOLDING
+    MTB, EBIKE, GRAVEL, CITY, CARGO, FOLDING, ROAD
+}
+
+enum class BikeCondition {
+    NEW, USED
 }
