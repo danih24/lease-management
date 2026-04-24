@@ -17,7 +17,9 @@ Draft fullstack application for managing bicycle lease contracts.
 ## Prerequisites
 
 - Java 21
-- Node.js (current LTS recommended) and npm
+- Node.js v22.17.0
+- npm v10.9.2
+- Maven (optional, as the backend includes a wrapper)
 
 ## Start the Backend
 
@@ -53,6 +55,7 @@ The frontend currently calls the backend API directly at:
 - [ ] Implement backend API endpoints for creating lease contracts.
 - [ ] Implement frontend UI for creating lease contracts.
 - [ ] Add database integration to persist data.
+- [ ] Add unit and integration tests for backend and frontend.
 
 ## Technical Notes
 - The backend is structured with a typical Spring Boot architecture, including controllers, services, and repositories.
